@@ -5,6 +5,9 @@ author 'RangerOne'
 description 'A basic resource to allow players to place emergency calls with one command'
 version '1.0.0'
 
--- What to run
 client_scripts 'client/*.lua'
 server_script 'server/*.lua'
+shared_scripts {
+  'config.lua',
+  '@ox_lib/init.lua'
+}
